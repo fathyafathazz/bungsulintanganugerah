@@ -1,0 +1,1218 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script>
+      document.documentElement.classList.add("js");
+    </script>
+    <title>BLA | Makloon Konveksi Cimahi</title>
+    <meta
+      name="description"
+      content="CV Bungsu Lintang Anugerah (BLA): makloon konveksi di Cimahi sejak 2014. Jahit, QC, packing, sampai kirim. UMKM mulai 100 pcs."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="BLA | Makloon Konveksi Cimahi" />
+    <meta
+      property="og:description"
+      content="Makloon konveksi di Cimahi sejak 2014. Jahit, QC, packing, sampai kirim. UMKM mulai 250 pcs."
+    />
+    <meta
+      property="og:image"
+      content="https://GANTI-URL-SITUS/images/og-bla.jpg"
+    />
+    <meta property="og:url" content="https://GANTI-URL-SITUS/" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" href="images/logo-bla.png" type="image/png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --navy: #14346b;
+        --red: #d4202a;
+        --ink: #1c1c1c;
+        --paper: #fbf8f2;
+        --line: #d9d2c4;
+        --rg: #ec6510;
+        --rgbg: #fffbe6;
+      }
+      * {
+        box-sizing: border-box;
+        margin: 0;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        font-family: "Plus Jakarta Sans", system-ui, sans-serif;
+        color: var(--ink);
+        background: var(--paper);
+        line-height: 1.6;
+      }
+      a {
+        color: inherit;
+      }
+      .wrap {
+        max-width: 1040px;
+        margin: 0 auto;
+        padding: 0 20px;
+      }
+      section {
+        padding: 64px 0;
+      }
+      h1,
+      h2,
+      h3 {
+        line-height: 1.2;
+        color: var(--navy);
+      }
+      h1 {
+        font-size: clamp(2rem, 6vw, 3.4rem);
+        font-weight: 800;
+      }
+      h2 {
+        font-size: clamp(1.5rem, 4vw, 2.1rem);
+        font-weight: 800;
+        margin-bottom: 12px;
+      }
+      h3 {
+        font-size: 1.05rem;
+        font-weight: 700;
+      }
+      p.lead {
+        max-width: 60ch;
+        color: #444;
+      }
+      .stitch {
+        border: 0;
+        border-top: 3px dashed var(--red);
+        opacity: 0.55;
+        margin: 0;
+      }
+      .btn {
+        display: inline-block;
+        padding: 13px 22px;
+        border-radius: 8px;
+        font-weight: 700;
+        text-decoration: none;
+        border: 2px solid var(--red);
+        background: var(--red);
+        color: #fff;
+      }
+      .btn.alt {
+        background: transparent;
+        color: var(--navy);
+        border-color: var(--navy);
+      }
+      .btn:focus-visible,
+      a:focus-visible {
+        outline: 3px solid var(--navy);
+        outline-offset: 3px;
+      }
+      header {
+        position: sticky;
+        top: 0;
+        z-index: 5;
+        background: var(--paper);
+        border-bottom: 1px solid var(--line);
+      }
+      header .wrap {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 64px;
+      }
+      header img {
+        height: 44px;
+        display: block;
+      }
+      nav {
+        display: flex;
+        gap: 22px;
+        align-items: center;
+        font-weight: 500;
+        font-size: 0.95rem;
+      }
+      nav a {
+        text-decoration: none;
+      }
+      nav a.n {
+        position: relative;
+        padding: 6px 2px;
+        transition: color 0.2s;
+      }
+      nav a.n::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 3px;
+        border-radius: 2px;
+        background: var(--red);
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: transform 0.2s;
+      }
+      nav a.n:hover,
+      nav a.n:focus-visible {
+        color: var(--navy);
+      }
+      nav a.n:hover::after,
+      nav a.n:focus-visible::after {
+        transform: scaleX(1);
+      }
+      nav a.n:active {
+        color: var(--red);
+      }
+      nav a.btn {
+        transition:
+          background 0.2s,
+          border-color 0.2s;
+      }
+      nav a.btn:hover {
+        background: #b01a23;
+        border-color: #b01a23;
+      }
+      nav a.btn:active {
+        transform: translateY(1px);
+      }
+      @media (prefers-reduced-motion: reduce) {
+        nav a.n,
+        nav a.n::after,
+        nav a.btn {
+          transition: none;
+        }
+      }
+      @media (max-width: 700px) {
+        nav a.n {
+          display: none;
+        }
+        .locgrid {
+          grid-template-columns: 1fr;
+        }
+        .gal {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+        .rg .wrap {
+          grid-template-columns: 1fr;
+        }
+        .rg img {
+          max-width: 240px;
+        }
+        .hero-text {
+          padding: 28px 22px 64px;
+          background: rgba(10, 28, 64, 0.65);
+        }
+        .nav {
+          display: none;
+        }
+      }
+      .hero {
+        padding: 0 0 40px;
+      }
+      .hero p {
+        margin: 16px 0 28px;
+        font-size: 1.1rem;
+        max-width: 52ch;
+        color: #444;
+      }
+      .hero .btns {
+        display: flex;
+        gap: 12px;
+        flex-wrap: wrap;
+      }
+      .facts {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 0;
+        margin-top: 40px;
+        border-top: 1px solid var(--line);
+      }
+      .facts div {
+        padding: 16px 16px 0 0;
+      }
+      .facts b {
+        display: block;
+        font-size: 1.7rem;
+        color: var(--navy);
+        font-weight: 800;
+      }
+      .facts span {
+        font-size: 0.9rem;
+        color: #555;
+      }
+      .pk {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: 20px;
+        margin-top: 28px;
+      }
+      .pk article {
+        background: #fff;
+        border: 1px solid var(--line);
+        border-left: 6px solid var(--navy);
+        padding: 22px;
+        border-radius: 4px 12px 12px 4px;
+      }
+      .pk article:nth-child(2) {
+        border-left-color: var(--red);
+      }
+      .pk h3 {
+        font-family:
+          "Bricolage Grotesque", "Plus Jakarta Sans", system-ui, sans-serif;
+        font-size: 1.3rem;
+        font-weight: 800;
+        letter-spacing: -0.01em;
+      }
+      .pk ol {
+        list-style: none;
+        counter-reset: langkah;
+        margin: 18px 0 0;
+        padding: 0;
+        display: grid;
+        gap: 12px;
+        font-family:
+          "Bricolage Grotesque", "Plus Jakarta Sans", system-ui, sans-serif;
+        font-size: 1.02rem;
+        font-weight: 500;
+        color: #2b2b2b;
+      }
+      .pk li {
+        counter-increment: langkah;
+        position: relative;
+        min-height: 30px;
+        padding: 4px 0 0 44px;
+        line-height: 1.35;
+      }
+      .pk li::before {
+        content: counter(langkah);
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        display: grid;
+        place-items: center;
+        background: var(--navy);
+        color: #fff;
+        font-size: 0.85rem;
+        font-weight: 700;
+      }
+      .pk article:nth-child(2) li::before {
+        background: var(--red);
+      }
+      /* garis jahitan putus-putus antar langkah */
+      .pk li:not(:last-child)::after {
+        content: "";
+        position: absolute;
+        left: 14px;
+        top: 32px;
+        bottom: -10px;
+        border-left: 2px dashed var(--line);
+      }
+      .order {
+        margin-top: 28px;
+        padding: 18px 22px;
+        background: var(--navy);
+        color: #fff;
+        border-radius: 12px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px 14px;
+        align-items: center;
+      }
+      .order b {
+        margin-right: 6px;
+      }
+      .why {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+        gap: 28px;
+        margin-top: 24px;
+      }
+      .why p {
+        color: #444;
+        font-size: 0.95rem;
+      }
+      .cats {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 20px;
+        margin-top: 24px;
+      }
+      .cats div {
+        padding: 20px;
+        border: 1px solid var(--line);
+        border-radius: 12px;
+        background: #fff;
+      }
+      .cats p {
+        font-size: 0.95rem;
+        color: #444;
+        margin-top: 6px;
+      }
+      .note {
+        margin-top: 20px;
+        font-size: 0.95rem;
+        color: #444;
+      }
+      .gal {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 12px;
+        margin-top: 24px;
+      }
+      .ph {
+        aspect-ratio: 4/3;
+        border-radius: 10px;
+        border: 2px dashed var(--line);
+        display: grid;
+        place-items: center;
+        text-align: center;
+        padding: 12px;
+        font-size: 0.85rem;
+        color: #777;
+        background: #f3eee3;
+      }
+      .gal .ph {
+        padding: 0;
+        overflow: hidden;
+        position: relative;
+      }
+      .gal .ph img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center; /* geser fokus, misalnya: center 30% */
+        display: block;
+      }
+      .gal .ph::after {
+        content: attr(data-cap);
+        position: absolute;
+        left: 8px;
+        bottom: 8px;
+        padding: 4px 10px;
+        border-radius: 999px;
+        background: rgba(20, 52, 107, 0.85);
+        color: #fff;
+        font-size: 0.8rem;
+        font-weight: 700;
+        line-height: 1.3;
+        pointer-events: none;
+      }
+      .locgrid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 28px;
+        align-items: start;
+      }
+      .locgrid iframe {
+        width: 100%;
+        height: 320px;
+        border: 0;
+        border-radius: 12px;
+      }
+      .jam {
+        margin: 0 0 18px;
+      }
+      .loc address {
+        font-style: normal;
+        margin: 10px 0 18px;
+        max-width: 52ch;
+      }
+      footer {
+        background: var(--navy);
+        color: #e8ecf5;
+        padding: 36px 0 90px;
+        font-size: 0.92rem;
+      }
+      footer a {
+        color: #fff;
+        text-decoration: none;
+      }
+      .wa {
+        position: fixed;
+        right: 16px;
+        bottom: 16px;
+        z-index: 9;
+        background: #1fa855;
+        color: #fff;
+        font-weight: 700;
+        text-decoration: none;
+        padding: 13px 18px;
+        border-radius: 999px;
+        box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+      }
+      @media (prefers-reduced-motion: reduce) {
+        html {
+          scroll-behavior: auto;
+        }
+      }
+
+      /* Teaser Ruang Garis. Halaman lengkapnya ada di ruang-garis.html */
+      .rg {
+        background: var(--rgbg);
+        color: #4a2a10;
+      }
+      .rg h2 {
+        color: var(--rg);
+      }
+      .rg .wrap {
+        display: grid;
+        grid-template-columns: 1fr 240px;
+        gap: 32px;
+        align-items: center;
+      }
+      .rg img {
+        width: 100%;
+        border-radius: 16px;
+      }
+      .rg .btn {
+        background: var(--rg);
+        border-color: var(--rg);
+        border-radius: 999px;
+      }
+      .rg .btn.alt {
+        background: transparent;
+        color: var(--rg);
+      }
+      .rg .btns {
+        display: flex;
+        gap: 12px;
+        flex-wrap: wrap;
+        margin-top: 20px;
+      }
+      .js .reveal {
+        opacity: 0;
+        transform: translateY(26px);
+        transition:
+          opacity 0.65s ease,
+          transform 0.65s cubic-bezier(0.2, 0.7, 0.2, 1);
+      }
+      .js .reveal.in {
+        opacity: 1;
+        transform: none;
+      }
+      @keyframes rise {
+        from {
+          opacity: 0;
+          transform: translateY(22px);
+        }
+        to {
+          opacity: 1;
+          transform: none;
+        }
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        *,
+        *::before,
+        *::after {
+          animation: none !important;
+          transition: none !important;
+        }
+        .js .reveal {
+          opacity: 1 !important;
+          transform: none !important;
+        }
+      }
+      /* ===== Animasi ===== */
+      .hero h1,
+      .hero p,
+      .hero .btns,
+      .hero .facts {
+        animation: rise 0.7s cubic-bezier(0.2, 0.7, 0.2, 1) both;
+      }
+      .hero p {
+        animation-delay: 0.12s;
+      }
+      .hero .btns {
+        animation-delay: 0.24s;
+      }
+      .hero .facts {
+        animation-delay: 0.36s;
+      }
+      .pk article,
+      .cats div {
+        transition:
+          transform 0.25s ease,
+          box-shadow 0.25s ease;
+      }
+      .pk article:hover,
+      .cats div:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 12px 26px rgba(20, 52, 107, 0.14);
+      }
+      .btn {
+        transition:
+          transform 0.2s ease,
+          box-shadow 0.2s ease,
+          background 0.2s,
+          border-color 0.2s;
+      }
+      .btn:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+      }
+      .wa {
+        animation: pulse 2.6s ease-in-out infinite;
+      }
+      @keyframes pulse {
+        0%,
+        100% {
+          box-shadow:
+            0 4px 14px rgba(0, 0, 0, 0.25),
+            0 0 0 0 rgba(31, 168, 85, 0.45);
+        }
+        60% {
+          box-shadow:
+            0 4px 14px rgba(0, 0, 0, 0.25),
+            0 0 0 14px rgba(31, 168, 85, 0);
+        }
+      }
+      .carousel {
+        position: relative;
+        overflow: hidden;
+        border-radius: 0;
+        height: clamp(420px, 75vh, 640px);
+        background: #14346b;
+      }
+      .track {
+        height: 100%;
+      }
+      .slide {
+        flex: 0 0 100%;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        scroll-snap-align: start;
+        display: block;
+      }
+      .hero-text {
+        position: absolute;
+        inset: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 48px max(20px, calc((100% - 1040px) / 2 + 20px)) 72px;
+        pointer-events: none;
+        background: linear-gradient(
+          90deg,
+          rgba(10, 28, 64, 0.75) 0%,
+          /* Bagian kiri gelap supaya teks putih sangat kontras */
+          rgba(10, 28, 64, 0.2) 45%,
+          /* Menipis di tengah */ rgba(10, 28, 64, 0) 70%
+            /* Bagian kanan transparan penuh, warna light yellow asli gambar tembus seutuhnya */
+        );
+      }
+      .hero-text .btns {
+        pointer-events: auto;
+      }
+      .hero .hero-text h1 {
+        color: #fff;
+        font-size: clamp(1.8rem, 5vw, 3rem);
+        font-weight: 800;
+        line-height: 1.2;
+        max-width: 20ch;
+      }
+      .hero .hero-text p {
+        color: #eef2fa;
+        max-width: 48ch;
+        margin: 14px 0 24px;
+        font-size: 1.1rem;
+      }
+      .hero .hero-text .btn.alt {
+        color: #fff;
+        border-color: #fff;
+      }
+      .track {
+        display: flex;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        scroll-behavior: smooth;
+        scrollbar-width: none;
+      }
+      .track::-webkit-scrollbar {
+        display: none;
+      }
+      .nav {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 2;
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        border: 0;
+        background: rgba(255, 255, 255, 0.9);
+        color: var(--navy);
+        font-size: 1.6rem;
+        line-height: 1;
+        cursor: pointer;
+      }
+      .nav.prev {
+        left: 12px;
+      }
+      .nav.next {
+        right: 12px;
+      }
+      .ctrl {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 16px;
+        z-index: 2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 14px;
+      }
+      .dots {
+        display: flex;
+        gap: 8px;
+      }
+      .dots button {
+        width: 10px;
+        height: 10px;
+        border-radius: 5px;
+        border: 0;
+        padding: 0;
+        background: rgba(255, 255, 255, 0.5);
+        cursor: pointer;
+        transition:
+          width 0.2s,
+          background 0.2s;
+      }
+      .dots button[aria-current="true"] {
+        background: #fff;
+        width: 26px;
+      }
+      #pp {
+        border: 1px solid rgba(255, 255, 255, 0.7);
+        background: rgba(0, 0, 0, 0.25);
+        color: #fff;
+        border-radius: 999px;
+        padding: 4px 12px;
+        font: inherit;
+        font-size: 0.8rem;
+        cursor: pointer;
+      }
+      .nav:focus-visible,
+      .dots button:focus-visible,
+      #pp:focus-visible {
+        outline: 3px solid #fff;
+        outline-offset: 2px;
+      }
+      @media (prefers-reduced-motion: reduce) {
+        .track {
+          scroll-behavior: auto;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="wrap">
+        <a href="#top"><img src="images/logo-bla.png" alt="BLA" /></a>
+        <nav>
+          <a class="n" href="#top">Beranda</a>
+          <a class="n" href="#layanan">Layanan</a>
+          <a class="n" href="#produk">Produk</a>
+          <a class="n" href="#ruang-garis">Ruang Garis</a>
+          <a class="n" href="#lokasi">Lokasi</a>
+          <!-- <a class="btn" data-wa="makloon" href="#">Tanya makloon</a> -->
+        </nav>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div
+          class="carousel"
+          role="region"
+          aria-roledescription="carousel"
+          aria-label="Foto BLA"
+        >
+          <div class="track" id="track" tabindex="0">
+            <img
+              class="slide"
+              src="https://images.unsplash.com/photo-1606501126768-b78d4569d3f9?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D"
+              alt=""
+              fetchpriority="high"
+            />
+            <img
+              class="slide"
+              src="images/hero.jpg"
+              alt="Suasana produksi konveksi"
+              fetchpriority="high"
+            />
+            <img
+              class="slide"
+              src="images/hero-3.jpg"
+              alt="Hasil produksi"
+              loading="lazy"
+            />
+          </div>
+          <div class="hero-text">
+            <h1>Konveksi makloon yang paham kebutuhan seller online</h1>
+            <p>
+              Dari sampel sampai produksi massal, BLA mengerjakan koleksi brand
+              kamu dengan jahitan rapi dan waktu yang jelas. UMKM mulai 250 pcs.
+            </p>
+            <div class="btns">
+              <a class="btn" data-wa="makloon" href="#"
+                >Konsultasi via WhatsApp</a
+              >
+              <a class="btn alt" href="#layanan">Lihat cara kerja</a>
+            </div>
+          </div>
+          <button class="nav prev" aria-label="Foto sebelumnya">
+            &lsaquo;
+          </button>
+          <button class="nav next" aria-label="Foto berikutnya">
+            &rsaquo;
+          </button>
+          <div class="ctrl">
+            <div class="dots" id="dots"></div>
+            <button id="pp" aria-label="Jeda slideshow">Jeda</button>
+          </div>
+        </div>
+        <div class="wrap">
+          <div class="facts">
+            <div><b>Sejak 2014</b><span>melayani produksi</span></div>
+            <div><b>20+</b><span>penjahit</span></div>
+            <div><b>6.000 pcs</b><span>kapasitas per bulan</span></div>
+            <div><b>250 pcs</b><span>minimal order UMKM</span></div>
+          </div>
+        </div>
+      </section>
+      <hr class="stitch" />
+
+      <section id="tentang">
+        <div class="wrap">
+          <h2>Tentang BLA</h2>
+          <p class="lead">
+            CV Bungsu Lintang Anugerah (BLA) adalah konveksi makloon di Cimahi
+            yang melayani produksi sejak 2014. Dengan banyak penjahit, kantor
+            pusat dan cabang, kami dipercaya brand fashion ternama untuk
+            memproduksi koleksi mereka, dan terbuka juga untuk UMKM yang baru
+            mulai.
+          </p>
+        </div>
+      </section>
+
+      <section id="layanan" style="padding-top: 0">
+        <div class="wrap">
+          <h2>Pilih cara kerja yang cocok</h2>
+          <p class="lead">
+            Kamu bisa serahkan semuanya ke kami, atau hanya bagian jahitnya.
+          </p>
+          <div class="pk">
+            <article>
+              <h3>Full service/order</h3>
+              <ol>
+                <li>Brief</li>
+                <li>Pola dan sample</li>
+                <li>Produksi</li>
+                <li>QC dan steam</li>
+                <li>Packing, termasuk pasang hang tag</li>
+                <li>Kirim</li>
+              </ol>
+            </article>
+            <article>
+              <h3>Potong dan jahit (FOB)</h3>
+              <ol>
+                <li>Potong bahan</li>
+                <li>Jahit sample</li>
+                <li>Produksi mulai potong (pola dari klien)</li>
+                <li>Jahit</li>
+                <li>QC dan steam</li>
+                <li>Packing dan kirim</li>
+              </ol>
+            </article>
+            <article>
+              <h3>Jahit saja (CMT)</h3>
+              <ol>
+                <li>Bahan sudah dipotong klien</li>
+                <li>Jahit</li>
+                <li>QC dan steam</li>
+                <li>Packing oleh klien</li>
+              </ol>
+            </article>
+          </div>
+          <div class="order">
+            <b>Cara pesan:</b> Chat WhatsApp <span>&rarr;</span> kirim brief
+            atau contoh <span>&rarr;</span> sepakat harga dan jadwal
+            <span>&rarr;</span> produksi dan kirim
+          </div>
+          <p class="note">
+            Pengecekan akhir dilakukan saat steam, lalu dilanjutkan packing dan
+            pemasangan hang tag dalam satu alur.
+          </p>
+        </div>
+      </section>
+      <hr class="stitch" />
+
+      <section id="kenapa">
+        <div class="wrap">
+          <h2>
+            Kenapa BLA
+            <span
+              style="
+                display: inline-flex;
+                align-items: center;
+                position: relative;
+                margin-left: 3px;
+              "
+            >
+              <!-- Tanda Tanya 1 (Kiri - Agak Kecil & Miring Kiri) -->
+              <span
+                style="
+                  color: #e51c23;
+                  font-size: 0.9em;
+                  transform: translateY(-6px) rotate(-15deg);
+                  opacity: 0.85;
+                "
+                >?</span
+              >
+
+              <!-- Tanda Tanya 2 (Tengah - Utama/Lebih Besar & Miring Kanan) -->
+              <span
+                style="
+                  color: #e51c23;
+                  font-size: 1.3em;
+                  transform: translateY(-10px) rotate(12deg);
+                  margin: 0 -2px;
+                "
+                >?</span
+              >
+
+              <!-- Tanda Tanya 3 (Kanan - Sedang & Miring Kanan Sedikit) -->
+              <span
+                style="
+                  color: #e51c23;
+                  font-size: 1em;
+                  transform: translateY(2px) rotate(8deg);
+                  opacity: 0.9;
+                "
+                >?</span
+              >
+            </span>
+          </h2>
+          <div class="why">
+            <div>
+              <h3>Selesai lebih cepat</h3>
+              <p>Penjahit kami banyak, jadi pesanan besar tidak antre lama.</p>
+            </div>
+            <div>
+              <h3>Jahitan rapi</h3>
+              <p>
+                Setiap potong dicek sebelum dikemas, sehingga hasil siap dijual.
+              </p>
+            </div>
+            <div>
+              <h3>Dipercaya brand besar</h3>
+              <p>
+                Banyak brand ternama sudah makloon di kami, dan sebagian
+                produksi rutin.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="produk" style="padding-top: 0">
+        <div class="wrap">
+          <h2>Yang sudah kami kerjakan</h2>
+          <div class="cats">
+            <div>
+              <h3>Seragam sekolah SD</h3>
+              <p>
+                Batik, muslim, rompi, olahraga, dan pramuka, untuk putra dan
+                putri.
+              </p>
+            </div>
+            <div>
+              <h3>Pakaian anak</h3>
+              <p>
+                Setelan, atasan, celana pendek dan panjang, serta baju muslim
+                anak laki-laki.
+              </p>
+            </div>
+            <div>
+              <h3>Pakaian dewasa dan muslim</h3>
+              <p>Atasan, kemeja, gamis, dress, tunik, dan setelan koko.</p>
+            </div>
+          </div>
+          <p class="note">
+            Dipercaya untuk produksi rutin oleh brand fashion anak ternama dan
+            brand busana muslim. Referensi klien dan contoh hasil produksi kami
+            bagikan saat konsultasi.
+          </p>
+          <div class="gal">
+            <div class="ph" data-cap="Cutting">
+              <img
+                src="images/works/cutting.jpg"
+                alt="Proses cutting baju di BLA"
+                loading="lazy"
+              />
+            </div>
+            <div class="ph" data-cap="Jahit">
+              <img
+                src="images/works/jahit.jpg"
+                alt="Proses menjahit baju di BLA"
+                loading="lazy"
+              />
+            </div>
+            <div class="ph" data-cap="Lubang kancing">
+              <img
+                src="images/works/lobang_kancing.jpg"
+                alt="Proses lobang kancing baju di BLA"
+                loading="lazy"
+              />
+            </div>
+            <div class="ph" data-cap="Pasang kancing">
+              <img
+                src="images/works/pasang_kancing.jpg"
+                alt="Proses memasang kancing baju di BLA"
+                loading="lazy"
+              />
+            </div>
+            <div class="ph" data-cap="Steam">
+              <img
+                src="images/works/steam.jpg"
+                alt="Proses steam baju di BLA"
+                loading="lazy"
+              />
+            </div>
+            <div class="ph" data-cap="Packing">
+              <img
+                src="images/works/packing.jpg"
+                alt="Proses packing baju di BLA"
+                loading="lazy"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="rg" id="ruang-garis">
+        <div class="wrap">
+          <div>
+            <h2>Brand kami sendiri: Ruang Garis</h2>
+            <p class="lead">
+              Baju anak yang nyaman dan lucu, diproduksi di konveksi kami
+              sendiri dan dijual di Shopee, TikTok Shop, dan Tokopedia.
+            </p>
+            <div class="btns">
+              <a class="btn" href="ruang-garis.html"
+                >Lihat produk Ruang Garis</a
+              >
+              <a class="btn alt" data-wa="rg" href="#"
+                >Tanya admin Ruang Garis</a
+              >
+            </div>
+          </div>
+          <img
+            src="images/logo-ruang-garis.png"
+            alt="Logo Ruang Garis Kids Fashion"
+          />
+        </div>
+      </section>
+
+      <section class="loc" id="lokasi">
+        <div class="wrap">
+          <h2>Kunjungi kami di Cimahi</h2>
+          <div class="locgrid">
+            <div>
+              <address>
+                Jl. Abdul Halim, Kampung Sindang Sari, Gang Guna, Gg. Sari
+                Bhakti II, RT 01/RW 03, Cigugur Tengah, Kec. Cimahi Tengah, Kota
+                Cimahi, Jawa Barat 40522
+              </address>
+              <p class="jam">
+                <b>Jam buka makloon:</b> Senin sampai Minggu, 08.00-17.00
+              </p>
+              <a
+                class="btn alt"
+                target="_blank"
+                rel="noopener"
+                href="https://www.google.com/maps/place/Lina+Konfeksi+RG/@-6.8898556,107.5551793,20z/data=!4m6!3m5!1s0x2e68e549e0775ba5:0x32736eab238ea2f5!8m2!3d-6.8901915!4d107.5542424!16s%2Fg%2F11ybc4ywmx"
+                >Buka di Google Maps</a
+              >
+              <p class="note">
+                Di Google Maps, lokasi kami terdaftar sebagai Lina Konfeksi RG.
+              </p>
+            </div>
+            <iframe
+              title="Peta lokasi BLA di Cimahi"
+              src="https://maps.google.com/maps?q=-6.8901915,107.5542424&z=17&output=embed"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="wrap">
+        <p>
+          <b>CV Bungsu Lintang Anugerah (BLA)</b><br />Makloon konveksi, Cimahi,
+          Jawa Barat
+        </p>
+        <p style="margin-top: 10px">
+          WhatsApp: <a data-wa="makloon" href="#">081818787908</a> &nbsp;|&nbsp;
+          Email:
+          <a href="mailto:ruanggaris14@gmail.com">ruanggaris14@gmail.com</a>
+        </p>
+        <p style="margin-top: 10px">&copy; 2026 BLA. Semua hak dilindungi.</p>
+      </div>
+    </footer>
+
+    <a class="wa" data-wa="makloon" href="#">Chat WhatsApp</a>
+
+    <script>
+      /* ===== PENGATURAN: ubah di sini saja ===== */
+      var NOMOR = "6281818787908";
+      var PESAN = {
+        makloon:
+          "Halo BLA, saya ingin konsultasi makloon.\nJenis produk: \nPerkiraan jumlah: \nCara kerja yang diinginkan (full service / potong dan jahit / jahit saja): ",
+        rg: "Halo admin Ruang Garis, saya mau tanya produk.\nNama produk: \nUkuran / usia anak: ",
+      };
+
+      function waUrl(k) {
+        return (
+          "https://wa.me/" + NOMOR + "?text=" + encodeURIComponent(PESAN[k])
+        );
+      }
+
+      document.querySelectorAll("[data-wa]").forEach(function (el) {
+        el.href = waUrl(el.dataset.wa);
+        el.target = "_blank";
+        el.rel = "noopener";
+      });
+      /* ===== Animasi muncul saat di-scroll ===== */
+      (function () {
+        var sel =
+          "section h2, p.lead, .pk article, .order, .why > div, .cats > div, .note, .gal .ph, .locgrid > *, .rg .wrap > *";
+        if (!("IntersectionObserver" in window)) return;
+        var io = new IntersectionObserver(
+          function (entries) {
+            entries.forEach(function (e) {
+              if (!e.isIntersecting) return;
+              var el = e.target;
+              el.classList.add("in");
+              io.unobserve(el);
+              setTimeout(function () {
+                el.classList.remove("reveal", "in");
+                el.style.transitionDelay = "";
+              }, 1200);
+            });
+          },
+          { threshold: 0.12 },
+        );
+        document.querySelectorAll(sel).forEach(function (el, i) {
+          el.classList.add("reveal");
+          el.style.transitionDelay = (i % 3) * 90 + "ms";
+          io.observe(el);
+        });
+      })();
+      (function () {
+        var track = document.getElementById("track"),
+          box = track.parentNode,
+          n = track.children.length,
+          dots = document.getElementById("dots"),
+          pp = document.getElementById("pp"),
+          i = 0,
+          timer = null,
+          paused = false,
+          reduce = window.matchMedia(
+            "(prefers-reduced-motion: reduce)",
+          ).matches;
+        function go(k) {
+          track.scrollTo({
+            left: ((k + n) % n) * track.clientWidth,
+            behavior: "smooth",
+          });
+        }
+        function mark() {
+          Array.prototype.forEach.call(dots.children, function (b, j) {
+            if (j === i) {
+              b.setAttribute("aria-current", "true");
+            } else {
+              b.removeAttribute("aria-current");
+            }
+          });
+        }
+        for (var k = 0; k < n; k++) {
+          (function (k) {
+            var b = document.createElement("button");
+            b.setAttribute("aria-label", "Ke slide " + (k + 1));
+            b.onclick = function () {
+              go(k);
+            };
+            dots.appendChild(b);
+          })(k);
+        }
+        track.addEventListener("scroll", function () {
+          var j = Math.round(track.scrollLeft / track.clientWidth);
+          if (j !== i) {
+            i = j;
+            mark();
+          }
+        });
+        document.querySelector(".nav.prev").onclick = function () {
+          go(i - 1);
+        };
+        document.querySelector(".nav.next").onclick = function () {
+          go(i + 1);
+        };
+        function stop() {
+          clearInterval(timer);
+        }
+        function start() {
+          stop();
+          if (!paused && !reduce) {
+            timer = setInterval(function () {
+              go(i + 1);
+            }, 3000);
+          }
+        }
+        box.addEventListener("mouseenter", stop);
+        box.addEventListener("mouseleave", start);
+        box.addEventListener("focusin", stop);
+        box.addEventListener("focusout", start);
+        box.addEventListener("touchstart", stop, { passive: true });
+        box.addEventListener("touchend", function () {
+          setTimeout(start, 6000);
+        });
+        pp.onclick = function () {
+          paused = !paused;
+          pp.textContent = paused ? "Putar" : "Jeda";
+          pp.setAttribute(
+            "aria-label",
+            paused ? "Putar slideshow" : "Jeda slideshow",
+          );
+          if (paused) {
+            stop();
+          } else {
+            start();
+          }
+        };
+        if (reduce) {
+          pp.style.display = "none";
+        }
+        mark();
+        start();
+      })();
+    </script>
+  </body>
+</html>
