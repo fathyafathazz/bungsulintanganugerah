@@ -21,12 +21,9 @@
       property="og:image"
       content="https://GANTI-URL-SITUS/images/og-ruang-garis.jpg"
     />
-    <meta
-      property="og:url"
-      content="https://GANTI-URL-SITUS/ruang-garis.html"
-    />
+    <meta property="og:url" content="https://GANTI-URL-SITUS/ruang-garis/" />
     <meta name="twitter:card" content="summary_large_image" />
-    <link rel="icon" href="images/logo-ruang-garis.png" type="image/png" />
+    <link rel="icon" href="/images/logo-ruang-garis.png" type="image/png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -534,7 +531,7 @@
         align-items: center;
         min-height: clamp(340px, 40vw, 600px);
         padding: 72px 0;
-        background: url("images/hero-3.jpg") center 40% / cover no-repeat;
+        background: url("/images/hero-3.jpg") center 40% / cover no-repeat;
       }
       .rg-hero .wrap {
         width: 100%;
@@ -585,7 +582,7 @@
       <div class="wrap">
         <a href="#top"
           ><img
-            src="images/logo-ruang-garis.png"
+            src="/images/logo-ruang-garis.png"
             alt="Ruang Garis Kids Fashion"
         /></a>
         <a class="back" href="index.html">Makloon konveksi BLA</a>
@@ -797,7 +794,7 @@
             "Atasan japanline knit dengan bordir bunga asli, bukan sablon. Celana scuba premium 280gr, tebal dan tidak menerawang.",
           warna: ["Dusty pink", "Cream", "Sage green", "Hitam"],
           chart: C.nami,
-          foto: "images/katalog/nami.jpg",
+          foto: "/images/katalog/nami.jpg",
           link: {},
         },
         {
@@ -814,7 +811,7 @@
             "Dusty pink",
           ],
           chart: C.lorenza,
-          foto: "images/katalog/lorenza.jpg",
+          foto: "/images/katalog/lorenza.jpg",
           link: {},
         },
         {
@@ -832,8 +829,8 @@
             "Mocca",
           ],
           chart: C.yukenzy,
-          foto: "images/katalog/yukenzy.jpg",
-          link: {},
+          foto: "/images/katalog/yukenzy.jpg",
+          link: "ruang-garis",
         },
         {
           nama: "Mia Vest Sleeveless One Set",
@@ -841,7 +838,7 @@
             "Setelan anak perempuan tanpa lengan motif salur. Atas dan bawah katun polymicro salur premium grade A, lembut, halus, adem, dan jatuh. Celana pendek di atas lutut, pinggang full karet.",
           warna: ["Lavender", "Hijau", "Merah"],
           chart: C.mia,
-          foto: "images/katalog/mia.jpg",
+          foto: "/images/katalog/mia.jpg",
           link: {},
         },
         {
@@ -850,7 +847,7 @@
             "Setelan anak perempuan Korean style: blouse pita tanpa lengan dan celana kulot motif salur. Full atas bawah katun polymicro salur premium grade A, lembut dan adem. Pinggang celana full karet.",
           warna: ["Merah", "Kuning", "Hijau", "Hitam", "Biru"],
           chart: C.salur,
-          foto: "images/katalog/salurribbonset.jpg",
+          foto: "/images/katalog/salurribbonset.jpg",
           link: {},
         },
         {
@@ -859,7 +856,7 @@
             "Setelan anak perempuan Korean style: kemeja crop salur dan celana kulot. Full atas bawah katun polymicro salur premium grade A, lembut dan adem.",
           warna: ["Merah", "Kuning", "Hijau", "Hitam", "Biru"],
           chart: C.yumi,
-          foto: "images/katalog/yumi.jpg",
+          foto: "/images/katalog/yumi.jpg",
           link: {},
         },
         {
@@ -868,7 +865,7 @@
             "Setelan anak perempuan motif gajah Thailand. Atasan japanline knit yang adem, bawahan rayon premium.",
           warna: ["Biru tosca", "Merah maroon", "Coklat", "Hitam"],
           chart: C.malia,
-          foto: "images/katalog/malia.jpg",
+          foto: "/images/katalog/malia.jpg",
           link: {},
         },
         {
@@ -877,7 +874,7 @@
             "Blouse atasan anak perempuan motif salur, model peplum dengan aksen pita, tanpa lengan. Lembut dan adem.",
           warna: ["Merah", "Kuning", "Hijau", "Hitam", "Biru"],
           chart: C.kiyomi,
-          foto: "images/katalog/kiyomi.jpg",
+          foto: "/images/katalog/kiyomi.jpg",
           link: {},
         },
         {
@@ -886,7 +883,7 @@
             "Setelan anak perempuan crop kemeja dan celana kulot, motif bambu bunga-bunga. Bahan polymicro premium yang adem dan flowy.",
           warna: ["Pink", "Kuning", "Hitam"],
           chart: C.kana,
-          foto: "images/katalog/kana.jpg",
+          foto: "/images/katalog/kana.jpg",
           link: {},
         },
         {
@@ -895,7 +892,7 @@
             "Setelan anak perempuan Korean style motif salur dengan ruffle. Celana kulot stretch premium, adem.",
           warna: ["Hijau", "Merah", "Lavender"],
           chart: C.aeris,
-          foto: "images/katalog/aeris.jpg",
+          foto: "/images/katalog/aeris.jpg",
           link: {},
         },
         {
@@ -913,10 +910,9 @@
             Object.assign({ judul: "Sweater" }, C.sweater),
             Object.assign({ judul: "Joger" }, C.joger),
           ],
-          foto: "images/katalog/sweater.jpg",
+          foto: "/images/katalog/sweater.jpg",
           link: {},
         },
-        /* Contoh isian lain: warna:["A","B"], foto:"images/nama.jpg", chartImg:"images/size-nama.jpg" (kalau pakai gambar, chart tidak wajib), link:{shopee:"https://..."} */
       ];
       /* ========================================= */
 
@@ -1055,7 +1051,7 @@
       };
       document.getElementById("storegrid").innerHTML = GRUP.map(function (g) {
         return (
-          '<div class="store"><b><img src="images/' +
+          '<div class="store"><b><img src="/images/' +
           g[1] +
           '.png" alt="" onerror="this.remove()">' +
           g[0] +
