@@ -189,30 +189,6 @@
           transition: none;
         }
       }
-      @media (max-width: 700px) {
-        nav a.n {
-          display: none;
-        }
-        .locgrid {
-          grid-template-columns: 1fr;
-        }
-        .gal {
-          grid-template-columns: repeat(2, minmax(0, 1fr));
-        }
-        .rg .wrap {
-          grid-template-columns: 1fr;
-        }
-        .rg img {
-          max-width: 240px;
-        }
-        .hero-text {
-          padding: 28px 22px 64px;
-          background: rgba(10, 28, 64, 0.65);
-        }
-        .nav {
-          display: none;
-        }
-      }
       .hero {
         padding: 0 0 40px;
       }
@@ -409,7 +385,7 @@
       }
       .locgrid {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
         gap: 28px;
         align-items: start;
       }
@@ -470,7 +446,11 @@
         gap: 32px;
         align-items: center;
       }
-      .rg img {
+      .rg-logo-mobile {
+        display: none;
+      }
+      .rg-logo-desktop {
+        display: block;
         width: 100%;
         border-radius: 16px;
       }
@@ -713,6 +693,61 @@
       @media (prefers-reduced-motion: reduce) {
         .track {
           scroll-behavior: auto;
+        }
+      }
+      @media (max-width: 700px) {
+        section {
+          padding: 48px 0;
+        }
+        nav a.n {
+          display: none;
+        }
+        .nav {
+          display: none;
+        }
+        .carousel {
+          height: clamp(520px, 88vh, 680px);
+        }
+        .hero-text {
+          padding: 28px 22px 64px;
+          background: rgba(10, 28, 64, 0.65);
+        }
+        .gal {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+        .rg .wrap {
+          display: grid;
+          grid-template-columns: 1fr; /* Paksa jadi 1 kolom saja persis locgrid */
+          gap: 20px;
+          text-align: center; /* Supaya teks rata tengah di HP */
+        }
+
+        /* Munculkan logo HP, sembunyikan logo desktop */
+        .rg .rg-logo-mobile {
+          display: block;
+          max-width: 140px;
+          margin: 0 auto;
+        }
+
+        .rg .rg-logo-desktop {
+          display: none; /* Logo desktop disembunyikan di HP */
+        }
+
+        .rg .btns {
+          justify-content: center;
+        }
+
+        .rg .btns .btn {
+          flex: 1 1 100%;
+          text-align: center;
+        }
+
+        /* Lokasi: satu kolom, peta sedikit lebih pendek */
+        .locgrid {
+          grid-template-columns: 1fr;
+        }
+        .locgrid iframe {
+          height: 260px;
         }
       }
     </style>
@@ -1005,6 +1040,13 @@
 
       <section class="rg" id="ruang-garis">
         <div class="wrap">
+          <!-- Logo KHUSUS HP (posisinya di atas teks) -->
+          <img
+            src="images/logo-ruang-garis.png"
+            alt="Logo Ruang Garis Kids Fashion"
+            class="rg-logo-mobile"
+          />
+
           <div>
             <h2>Brand kami sendiri: Ruang Garis</h2>
             <p class="lead">
@@ -1012,17 +1054,18 @@
               sendiri dan dijual di Shopee, TikTok Shop, dan Tokopedia.
             </p>
             <div class="btns">
-              <a class="btn" href="/ruang-garis/"
-                >Lihat produk Ruang Garis</a
-              >
+              <a class="btn" href="/ruang-garis/">Lihat produk Ruang Garis</a>
               <a class="btn alt" data-wa="rg" href="#"
                 >Tanya admin Ruang Garis</a
               >
             </div>
           </div>
+
+          <!-- Logo KHUSUS DESKTOP (posisinya di kanan teks) -->
           <img
             src="images/logo-ruang-garis.png"
             alt="Logo Ruang Garis Kids Fashion"
+            class="rg-logo-desktop"
           />
         </div>
       </section>
